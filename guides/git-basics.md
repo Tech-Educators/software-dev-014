@@ -1,32 +1,77 @@
-# Git Flow
 
-## Terms
+# Creating a GitHub Repository
 
-- local - This is your computer
-- remote - This is your repository on GitHub
+1. **Go to your GitHub profile.**
+2. **Navigate to the "Repositories" tab.**
+3. **Click the green "New" button.**
+4. **Name your repository, keep it public, and check the box to add a README file.**
+5. **Click "Create repository".**
 
-## Create a new Repository (repo)
+# Cloning a Repository
 
-- Click the "New" button on the left of the page
-- In the name of the repository, give the repo a name
-- IMPORTANT check the "Add a README.md" box
-- Click "Create Repository"
+1. **Click the green "Code" button on your repository page.**
+2. **Select the "SSH" tab.**
+3. **Copy the URL.**
+4. **Open your terminal and navigate to the desired directory.**
+5. **Run the command:**
+   ```bash
+   git clone <your-ssh-url>
+   ```
+   For example:
+   ```bash
+   git clone git@github.com:username/repo-name.git
+   ```
 
-## Clone the Repo
+   You should see output like this:
+   ```bash
+   Cloning into 'repo-name'...
+   Enter passphrase for key '/Users/youruser/.ssh/id_rsa':
+   remote: Enumerating objects: 3, done.
+   remote: Counting objects: 100% (3/3), done.
+   remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+   Receiving objects: 100% (3/3), done.
+   ```
 
-- Click the "Code" button and copy the link (it should be the SSH link)
-- On your terminal type `git clone` followed by a space, and the link you copied
-- When you run that, it will copy the repository from GitHub and put it on your local machine
+6. **Navigate into your repository:**
+   ```bash
+   cd repo-name
+   ```
 
-## Open the project
+# Using Git
 
-- You can now navigate into that folder using `cd` followed by your repo name
-- Run `code .` in your terminal to open the project in VS Code
+1. **Make your changes.**
+2. **Add all changes:**
+   ```bash
+   git add .
+   ```
+3. **Commit your changes with a message:**
+   ```bash
+   git commit -m 'Your commit message'
+   ```
+4. **Push your changes to GitHub:**
+   ```bash
+   git push
+   ```
 
-## Pushing local changes to our remote (ACP)
+# Deploying a Site with GitHub Pages
 
-Assuming you've saved some changes to the existing files or created/deleted others, you can check the changes by typing `git status` in your terminal.
+1. **Go to the "Settings" tab of your repository.**
+2. **Select "Pages" from the left sidebar.**
+3. **Under "Source", select "main" as the branch and "root" as the folder.**
+4. **Save your changes.**
 
-- `git add .` will **ADD** all the changes made ready to be commited (this is often reffered to as "staging" the changes)
-- `git commit -m "My message"` will **COMMIT** all the changes that were previously added (this is the snapshot)
-- `git push` will **PUSH** all the commits you've made to the remote (GitHub)
+   To verify your deployment:
+   1. **Go to the "Code" tab to return to the main repository page.**
+   2. **Look for the "Environments" section on the right. Your deployed site should be listed there.**
+   3. **Check the "Actions" tab for deployment progress.**
+
+# Handling Commit Message Issues in Ubuntu
+
+If you forget to finish your quotes in a commit message:
+
+1. **Press `Esc`.**
+2. **Type `:wq` and press Enter.**
+
+If you don't provide a commit message, you'll enter a default editor:
+
+1. **Close the terminal and restart your commit message process.**

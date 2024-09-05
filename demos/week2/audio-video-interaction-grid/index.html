@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Audio and Video Interactions</title>
+  </head>
+  <body>
+    <header>
+      <h1>Media Shenanigans</h1>
+      <h2>This is so much fun, I wish I never had to stop!</h2>
+    </header>
+    <main>
+      <img
+        src="./assets/sunflowers.jpg"
+        alt="sunflowers"
+        width="300"
+        height="200"
+      />
+      <audio id="audio-player" src="./assets/bumblebee.mp3" controls></audio>
+      <div class="audio-player">
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+        <button id="stop-button">Stop</button>
+        <button id="skip-button">Skip 2 sec</button>
+      </div>
+      <video
+        src="./assets/bumblebeeandsunflower.mp4"
+        controls
+        width="300"
+        height="200"
+      ></video>
+    </main>
+    <footer>
+      <p>The best audio player in the world</p>
+    </footer>
+  </body>
+</html>

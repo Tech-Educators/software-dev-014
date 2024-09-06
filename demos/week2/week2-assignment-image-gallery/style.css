@@ -1,0 +1,8 @@
+/* this import resets the default browser stylesheet */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+* {
+  background-color: peru;
+}
+
+/* make sure you have media queries!!!!!! */

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Forms and Validation</title>
+  </head>
+  <body>
+    <h1>Forms and Validation</h1>
+    <!-- basic structure of  form -->
+    <!-- text boxes / checkboxes / drop-down menus -->
+    <!-- labels for our text boxes -->
+    <!-- submit button -->
+    <form>
+      <!-- the for attribute is to specify what the label is for -->
+      <label for="username">Username</label>
+      <!-- !the name attribute is the most important attribute in your input. We always need the name attribute! The name attribute value has to match the for attribute value in the label -->
+      <input
+        type="text"
+        name="username"
+        id="username-input"
+        required
+        placeholder="Your username needs at least 1"
+      />
+      <!-- we specify a type to make sure the user inputs the correct type of data we are expecting -->
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email-input" />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password-input"
+        class="password-input"
+        required
+        placeholder="Passwords are secret"
+        minlength="3"
+        maxlength="9"
+      />
+      <label for="birthdate">Date of Birth</label>
+      <input type="date" name="birthdate" id="birthdate-input" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+* {
+  background-color: peru;
+}
+
+/* how to select the form elements */
+/* you can select your elements with a class or id */
+/* alternative ways of selecting form elements */
+input[type="text"] {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: blue;
+}
+
+input[type="email"] {
+  font-weight: bolder;
+}
+
+input[type="password"] {
+  color: rgb(18, 129, 219);
+}
+
+input::placeholder {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: papayawhip;
+}

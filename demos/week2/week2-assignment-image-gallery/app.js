@@ -13,7 +13,7 @@ let images = [
     height: 200,
   },
   {
-    src: "https://images.unsplash.com/photo-1455628508298-04cd1c1675f8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "./images/image.jpg",
     alt: "a bunch of pigeons fighting for bread",
     width: 300,
     height: 200,

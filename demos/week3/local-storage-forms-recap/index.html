@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Local storage and forms</title>
+  </head>
+  <body>
+    <h1>Local Storage and Forms</h1>
+    <p>My favourite colour:</p>
+
+    <form>
+      <fieldset>
+        <legend>User Preferences</legend>
+        <label for="colour">Favourite Colour</label>
+        <input
+          type="text"
+          name="colour"
+          placeholder="Write your favourite colour"
+        />
+        <button type="submit">Save preferences</button>
+      </fieldset>
+    </form>
+    <button id="clear-button">Clear colour</button>
+  </body>
+</html>

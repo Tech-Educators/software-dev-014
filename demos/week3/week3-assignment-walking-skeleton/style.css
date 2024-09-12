@@ -1,0 +1,8 @@
+/* you can also add a css reset (optional)*/
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+* {
+  background-color: peru;
+}
+
+/* please, add media queries, it is not optional, you need to do it from now on */

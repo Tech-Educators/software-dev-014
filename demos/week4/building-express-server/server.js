@@ -39,7 +39,10 @@ app.get("/personalinfo", function (request, response) {
   //we will use the request parameter to request data to the database
   //we will use the response to send the data to the client
 
-  response.json({ message: "Database data received" });
+  response.json([
+    { message: "Database data received" },
+    { message: "And another message" },
+  ]);
 });
 
 //We can write a POST endpoint to add new data to the database

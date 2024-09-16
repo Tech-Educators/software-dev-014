@@ -15,14 +15,43 @@ let stats = {
 //select the DOM elements (buttons, imgs, p, ...)
 
 //a way to store the shop upgrades that come from the API
-let shopUpgrades = [];
+// let shopUpgrades = [];
 
+const upgradesContainer = document.getElementById("upgrades-container");
 //fetch the items from the API --> https://cookie-upgrade-api.vercel.app/api/upgrades
-function getShopUpgrades() {
+async function getShopUpgrades() {
   //fetch the data
+  const result = await fetch(
+    "https://cookie-upgrade-api.vercel.app/api/upgrades"
+  );
   //translate it into JSON
+  const data = await result.json();
+  console.log(data);
+  return data;
   //PUSH the items into the shopUpgrades array above
+  // shopUpgrades.push(data);
 }
+
+async function renderShopUpgrades() {
+  const getShopItems = await getShopUpgrades();
+
+  //you will use a loop or array method
+  getShopItems.forEach(function (upgrade) {
+    //create DOM elements
+    const upgradeName = document.createElement("h2");
+    const upgradeCost = document.createElement("p");
+    const upgradeIncrease = document.createElement("p");
+    //for each item in the array, assign the value to a DOM element
+    upgradeName.textContent = upgrade.name;
+    upgradeCost.textContent = upgrade.cost;
+    upgradeIncrease.textContent = upgrade.increase;
+    //append the element to the DOM
+    upgradesContainer.appendChild(upgradeName);
+    upgradesContainer.appendChild(upgradeCost);
+    upgradesContainer.appendChild(upgradeIncrease);
+  });
+}
+renderShopUpgrades();
 
 //an event listener to click on the cookie button
 //select the cookie img or button
@@ -54,14 +83,14 @@ setInterval(function () {
 //extra function blocks to give you other ideas
 //these building blocks are just possible solutions to probles you might find
 
-function renderShopUpgrades() {
-  //create DOM elements
-  //you will use a loop or array method
-  shopUpgrades.forEach(function (upgrade) {
-    //for each item in the array, assign the value to a DOM element
-    //append the element to the DOM
-  });
-}
+// function renderShopUpgrades() {
+//   //create DOM elements
+//   //you will use a loop or array method
+//   shopUpgrades.forEach(function (upgrade) {
+//     //for each item in the array, assign the value to a DOM element
+//     //append the element to the DOM
+//   });
+// }
 
 function saveLocalStorage() {
   //a method that turns your data into string soup

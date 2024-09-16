@@ -5,7 +5,7 @@
 //STEP 5:  "type": "module" in the package.json
 
 //We need to import the express folder, not just one element
-import express, { response } from "express";
+import express from "express";
 
 //initialise my express server and storing it in the app variable (convention name)
 

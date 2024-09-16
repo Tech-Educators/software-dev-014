@@ -47,5 +47,7 @@ app.get("/personalinfo", function (request, response) {
 app.post("/addnewdata", function (req, res) {
   //receive the data from the client
   //we are going to add the data to the database
-  res.json({ message: "Form data received and sent to database" });
+  //here we are using the body property inside our request and we are sending the body data as a response
+  const data = req.body;
+  res.send(data);
 });

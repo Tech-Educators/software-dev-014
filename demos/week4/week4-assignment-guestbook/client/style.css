@@ -1,0 +1,4 @@
+/* you can have a CSS reset */
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+
+/* I need media queries for at least mobile and desktop screens */

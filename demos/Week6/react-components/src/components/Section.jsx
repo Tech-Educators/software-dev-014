@@ -1,10 +1,10 @@
-export default function () {
+export default function (props) {
   return (
     <>
-      <h2>RECENT LAUNCH</h2>
-      <h1>SHIPFLIGHT VIDEO</h1>
+      <h2>{props.subtitle}</h2>
+      <h1>{props.mainTitle}</h1>
       <button>Read More</button>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg"></img>
+      <img src={props.src}></img>
     </>
   );
 }

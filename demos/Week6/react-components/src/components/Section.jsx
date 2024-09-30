@@ -1,10 +1,10 @@
-export default function (props) {
+export default function () {
   return (
     <>
-      <h2>{props.subtitle}</h2>
-      <h1>{props.mainTitle}</h1>
+      <h2>Subtitle text goes here</h2>
+      <h1>Main title text goes here</h1>
       <button>Read More</button>
-      <img src={props.src}></img>
+      <img src=""></img>
     </>
   );
 }

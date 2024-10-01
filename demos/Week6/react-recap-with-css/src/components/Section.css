@@ -1,0 +1,15 @@
+:root {
+  --that-specific-orange: rgba(230,101,36,255) 
+}
+.subtitle1 {
+    
+   background-color: var(--that-specific-orange)
+}
+
+.subtitle2 {
+    background-color: var(--that-specific-orange)
+}
+
+.subtitle3 {
+    background-color: var(--that-specific-orange)
+}

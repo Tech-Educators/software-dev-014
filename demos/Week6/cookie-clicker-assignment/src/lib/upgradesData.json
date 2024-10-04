@@ -1,0 +1,7 @@
+[
+  {
+    "advice": "you can have your personal upgrades here",
+    "alternative": "you could also fetch the upgrades from our API",
+    "API link": "https://cookie-upgrade-api.vercel.app/api/upgrades"
+  }
+]

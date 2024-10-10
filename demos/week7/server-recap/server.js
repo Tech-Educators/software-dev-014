@@ -144,6 +144,8 @@ app.delete("/delete-biscuit/:id", async (req, res) => {
 
   try {
     const { id } = req.params;
+    // const biscuitId = req.params.id;
+
     // params {
     //     id: 1
     // }

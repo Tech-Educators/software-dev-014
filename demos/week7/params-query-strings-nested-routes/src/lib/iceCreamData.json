@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Vanilla",
+    "flavour": "Vanilla",
+    "price": 3.5
+  },
+  {
+    "id": 2,
+    "name": "Choco Delight",
+    "flavour": "Chocolate",
+    "price": 4.0
+  },
+  {
+    "id": 3,
+    "name": "Strawberry Bliss",
+    "flavour": "Strawberry",
+    "price": 3.75
+  },
+  {
+    "id": 4,
+    "name": "Minty Fresh",
+    "flavour": "Mint Chocolate Chip",
+    "price": 4.25
+  },
+  {
+    "id": 5,
+    "name": "Caramel Swirl",
+    "flavour": "Caramel",
+    "price": 4.5
+  },
+  {
+    "id": 6,
+    "name": "Cookies 'n Cream",
+    "flavour": "Cookies and Cream",
+    "price": 4.0
+  },
+  {
+    "id": 7,
+    "name": "Tropical Mango",
+    "flavour": "Mango",
+    "price": 3.8
+  },
+  {
+    "id": 8,
+    "name": "Peanut Butter Crunch",
+    "flavour": "Peanut Butter",
+    "price": 4.3
+  },
+  {
+    "id": 9,
+    "name": "Manny's Special",
+    "flavour": "Lemon meringue and chai",
+    "price": 10000
+  }
+]

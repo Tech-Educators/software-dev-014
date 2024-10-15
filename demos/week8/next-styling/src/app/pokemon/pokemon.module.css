@@ -1,0 +1,11 @@
+/* the styles in here will only apply to my pokemon page */
+/* we need to use pure selectors (class or id name)  */
+
+.body {
+  background-color: blue;
+  color: peru;
+}
+
+.heading {
+  font-weight: 600;
+}

@@ -1,0 +1,25 @@
+/* the tailwind plugins */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* the :root pseudo-class */
+/* we usually declare css variables in the root pseudo-class */
+/* you can resuse variables in different rules */
+:root {
+  --background: peru;
+  --foreground: blue;
+}
+
+/* media queries */
+
+/* global styles that you want to apply to your whole website */
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

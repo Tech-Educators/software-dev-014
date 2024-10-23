@@ -1,11 +1,13 @@
 // import { paramsType } from "@/lib/types";
 // { params }: paramsType}
 
+import { postType } from "@/lib/types";
+
 export default async function IdPage({ params }: { params: { id: string } }) {
   const result = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${params.id}`
   );
-  const data = await result.json();
+  const data: postType = await result.json();
   return (
     <>
       <h1>Post number {params.id}</h1>

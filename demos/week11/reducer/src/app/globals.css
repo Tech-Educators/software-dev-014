@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.dark {
+  color: whitesmoke;
+  background-color: black;
+}
+
+.colourblind {
+  color: yellow;
+  background-color: blue;
+}
+
+.dyslexia {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  background-color: whitesmoke;
+}

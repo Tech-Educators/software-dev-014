@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.light {
+  color: black;
+  background-color: whitesmoke;
+}
+
+.dark {
+  color: whitesmoke;
+  background-color: black;
+}
